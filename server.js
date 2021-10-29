@@ -31,6 +31,7 @@ app.get("/", function(req,res) {
   res.send("<h1>hello, friend!</h1>")
 })
 
+// local.host:3000/sneakers
 app.get('/sneakers', function(req, res) {
   sneakers.find({}, function(error, sneakers) {
     res.render('sneakers/index', {

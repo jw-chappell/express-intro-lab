@@ -14,9 +14,10 @@
   <ul>
     <% sneakers.forEach(function(sneaker) { %>
       <li>
-        <%= sneaker.text %>
+        <%= sneaker.name %>
           - 
-        <%= sneaker.done ? 'good' : 'not good' %>
+        <%= sneaker.good %>
+        <%= sneaker.type ? 'good' : 'not good' %>
       </li>
     <% }) %>
   </ul> 
